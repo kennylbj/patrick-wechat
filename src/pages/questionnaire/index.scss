@@ -1,0 +1,31 @@
+.bg {
+  background-color: #FAFBFC;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+  .at-button {
+    height: 78px;
+    line-height: 76px;
+    font-size: 28px;
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 24px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  box-shadow: -4px 4px 8px rgba(0, 0, 0, .15);
+  .title {
+    font-size: 32px;
+    padding: 24px;
+    font-weight: bold;
+  }
+  .question {
+    margin-top: 12px;
+    padding: 24px 2px;
+  }
+}

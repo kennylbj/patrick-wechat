@@ -1,0 +1,26 @@
+.list {
+  position: relative;
+  min-height: 128px;
+  .at-list {
+    &__item {
+      padding: 22px 24px;
+      .item-content {
+        &__info {
+          &-title {
+            font-size: 28px;
+          }
+        }
+      }
+      .item-extra {
+        &__info {
+          margin-right: 4px;
+          font-size: 26px;
+          white-space: normal;
+        }
+        &__icon-arrow {
+          font-size: 38px;
+        }
+      }
+    }
+  }
+}

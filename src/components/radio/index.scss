@@ -1,0 +1,40 @@
+.radio {
+  &:first-child {
+    border-top: 1px solid #F0F0F0;
+  }
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 32px 28px 0;
+  border-bottom: 1px solid #E5E5E5;
+  .left {
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    .index {
+      font-size: 28px;
+      color: #333;
+    }
+    .title {
+      margin-left: 32px;
+      font-size: 26px;
+      color: #7F7F7F;
+      word-break: break-all;
+    }
+  }
+  .check {
+    width: 32px;
+    height: 32px;
+    margin-left: 32px;
+    transition: all 0.1s;
+  }
+  .check-hidden {
+    visibility: hidden;
+  }
+}
+.item-hover {
+  background-color: #F0F0F0;
+}
