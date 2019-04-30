@@ -20,6 +20,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@antv/f2-canvas": "^1.0.5",
     "@tarojs/async-await": "1.2.24",
     "@tarojs/components": "1.2.24",
     "@tarojs/redux": "1.2.24",
