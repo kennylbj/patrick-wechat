@@ -1,9 +1,9 @@
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 # patrick-wechat
-⭐️🐟 questionnaire wechat app built with taro, taro-ui and heart❤️.
+⭐️🐟 基于taro, taro-ui的小程序问卷app❤️.
 
-## Develop
+## 开发
 
 ```bash
 # install taro cli
@@ -13,31 +13,32 @@ yarn global add @tarojs/cli
 yarn run dev:weapp
 ```
 
-## Update
+## 更新
 
 ```bash
-# update taro
+# 更新 taro
 taro update self
 
-# update project
+# 更新项目
 taro update project
 ```
 
-## Deploy
+## 部署
 
 ```bash
-# build and compress
+# 构建、压缩
 yarn run build:weapp
 ```
 
-## Screenshots
+## 截图
+
 ![](screenshots/index.png)
 ![](screenshots/introduce.png)
 ![](screenshots/questionnaire.png)
 ![](screenshots/result.png)
 
-## Why Patrick
+## 为什么是派大星
 
-Patrick Star is a fictional character in SpongeBob SquarePants And he loves asking questions!
+派大星是海绵宝宝中的一个角色，它很喜欢问问题。
 
 ![patrick](https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Patrick_Star.svg/1200px-Patrick_Star.svg.png)
