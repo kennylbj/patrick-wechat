@@ -10,6 +10,13 @@ class Result extends Component {
     },
   }
 
+  onShareAppMessage() {
+    return {
+      title: '问卷宝典',
+      path: '/pages/result/index',
+    }
+  }
+
   componentDidMount() {
     console.log('result mount');
   }

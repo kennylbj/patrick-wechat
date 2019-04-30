@@ -15,6 +15,14 @@ class Index extends Component {
     enablePullDownRefresh: true,
   }
 
+  // auto invoke when share
+  onShareAppMessage() {
+    return {
+      title: '问卷宝典',
+      path: '/pages/index/index',
+    }
+  }
+
   componentDidMount() {
     this.fetchData();
   }

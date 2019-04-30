@@ -28,6 +28,12 @@ taro update project
 yarn run build:weapp
 ```
 
+## Screenshots
+![ss1](screenshots/index.png)
+![ss2](screenshots/introduce.png)
+![ss3](screenshots/questionnaire.png)
+![ss4](screenshots/result.png)
+
 ## Why Patrick
 
 Patrick Star is a fictional character in SpongeBob SquarePants And he loves asking questions!
