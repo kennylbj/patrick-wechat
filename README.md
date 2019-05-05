@@ -3,6 +3,13 @@ English | [简体中文](./README.zh-CN.md)
 # patrick-wechat
 ⭐️🐟 questionnaire wechat app built with taro, taro-ui and heart❤️.
 
+## Feature
+
+1. 👽 Use [taro](https://github.com/NervJS/taro) as framework.
+2. 👨🏻‍💻 Use [taro-ui](https://github.com/NervJS/taro-ui) as UI compoments.
+3. 👩🏻‍💻 Use [redux](https://github.com/reduxjs/redux) to manage state.
+4. 📈 Combine wechat with third party [f2](https://github.com/antvis/f2) to demonstrate charts.
+
 ## Develop
 
 ```bash

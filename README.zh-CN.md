@@ -3,6 +3,13 @@
 # patrick-wechat
 ⭐️🐟 基于taro, taro-ui的小程序问卷app❤️.
 
+## 特性
+
+1. 👽 使用[taro](https://github.com/NervJS/taro)作为开发框架
+2. 👨🏻‍💻 使用[taro-ui](https://github.com/NervJS/taro-ui)作为视图组件
+3. 👩🏻‍💻 使用[redux](https://github.com/reduxjs/redux)管理状态
+4. 📈 采用第三方的[f2](https://github.com/antvis/f2)来展示图表
+
 ## 开发
 
 ```bash
@@ -39,6 +46,6 @@ yarn run build:weapp
 
 ## 为什么是派大星
 
-派大星是海绵宝宝中的一个角色，它很喜欢问问题。
+派大星是海绵宝宝中的一个角色，它是个问题宝宝。
 
 ![patrick](https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Patrick_Star.svg/1200px-Patrick_Star.svg.png)
