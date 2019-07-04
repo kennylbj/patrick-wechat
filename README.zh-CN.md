@@ -13,6 +13,11 @@
 ## 开发
 
 ```bash
+cd patrick-wechat
+
+# install dependencies
+yarn install
+
 # install taro cli
 yarn global add @tarojs/cli
 

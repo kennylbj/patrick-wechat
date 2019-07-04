@@ -13,6 +13,11 @@ English | [简体中文](./README.zh-CN.md)
 ## Develop
 
 ```bash
+cd patrick-wechat
+
+# install dependencies
+yarn install
+
 # install taro cli
 yarn global add @tarojs/cli
 
