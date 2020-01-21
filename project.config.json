@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "patrick-wechat",
 	"description": "questionnaire app",
-	"appid": "wx48ac8b1f1d039530",
+	"appid": "",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
@@ -13,5 +13,6 @@
 	"compileType": "miniprogram",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
+	"libVersion": "2.10.1",
 	"condition": {}
 }

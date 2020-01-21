@@ -1,6 +1,7 @@
 English | [简体中文](./README.zh-CN.md)
 
 # patrick-wechat
+
 ⭐️🐟 questionnaire wechat app built with taro, taro-ui and heart❤️.
 
 ## Feature
@@ -42,7 +43,18 @@ taro update project
 yarn run build:weapp
 ```
 
+## Upgrade To Taro 2.0
+
+Taro 2.0 is required for this mini app. You can follow [THIS](https://taro-docs.jd.com/taro/docs/migrate-to-2.html) instruction to complete the upgrade.
+
+## Troubleshootting
+
+1. Unable to run in Wechat Devtools after updating
+
+  Delete the project and reimport it if it was already existed in your project list.
+
 ## Screenshots
+
 ![](screenshots/index.png)
 ![](screenshots/introduce.png)
 ![](screenshots/questionnaire.png)

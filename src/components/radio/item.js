@@ -5,6 +5,10 @@ import checkImg from '../../assets/images/check.png'
 import './index.scss'
 
 class RadioItem extends Component {
+  static options = {
+    addGlobalClass: true,
+  }
+  
   render () {
     const { index, value, selected, onClick } = this.props;
     return (
