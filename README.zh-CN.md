@@ -6,10 +6,10 @@
 
 ## 特性
 
-1. 👽 使用[taro](https://github.com/NervJS/taro)作为开发框架
-2. 👨🏻‍💻 使用[taro-ui](https://github.com/NervJS/taro-ui)作为视图组件
-3. 👩🏻‍💻 使用[redux](https://github.com/reduxjs/redux)管理状态
-4. 📈 采用第三方的[f2](https://github.com/antvis/f2)来展示图表
+1. 👽 使用[taro](https://github.com/NervJS/taro)作为开发框架，编写React风格的代码。
+2. 👨🏻‍💻 使用[taro-ui](https://github.com/NervJS/taro-ui)作为视图组件，简化UI构建。
+3. 👩🏻‍💻 使用[redux](https://github.com/reduxjs/redux)来管理APP状态。
+4. 📈 采用第三方的[f2](https://github.com/antvis/f2)来展示图表用法。
 
 ## 开发
 
@@ -55,10 +55,12 @@ yarn run build:weapp
 
 ## 截图
 
-![](screenshots/index.png)
-![](screenshots/introduce.png)
-![](screenshots/questionnaire.png)
-![](screenshots/result.png)
+<div align="center">
+  <img src="./screenshots/index.png" width="200" />
+  <img src="./screenshots/introduce.png" width="200" />
+  <img src="./screenshots/questionnaire.png" width="200" />
+  <img src="./screenshots/result.png" width="200" />
+</div>
 
 ## 为什么是派大星
 

@@ -6,10 +6,10 @@ English | [简体中文](./README.zh-CN.md)
 
 ## Feature
 
-1. 👽 Use [taro](https://github.com/NervJS/taro) as framework.
-2. 👨🏻‍💻 Use [taro-ui](https://github.com/NervJS/taro-ui) as UI compoments.
-3. 👩🏻‍💻 Use [redux](https://github.com/reduxjs/redux) to manage state.
-4. 📈 Combine wechat with third party [f2](https://github.com/antvis/f2) to demonstrate charts.
+1. 👽 Use [taro](https://github.com/NervJS/taro) framework for coding with React style.
+2. 👨🏻‍💻 Use [taro-ui](https://github.com/NervJS/taro-ui) UI compoments to simplify UI building.
+3. 👩🏻‍💻 Use [redux](https://github.com/reduxjs/redux) to completely manage app state.
+4. 📈 Combine wechat with third party [f2](https://github.com/antvis/f2) to demonstrate charts usage.
 
 ## Develop
 
@@ -55,10 +55,12 @@ Taro 2.0 is required for this mini app. You can follow [THIS](https://taro-docs.
 
 ## Screenshots
 
-![](screenshots/index.png)
-![](screenshots/introduce.png)
-![](screenshots/questionnaire.png)
-![](screenshots/result.png)
+<div align="center">
+  <img src="./screenshots/index.png" width="200" />
+  <img src="./screenshots/introduce.png" width="200" />
+  <img src="./screenshots/questionnaire.png" width="200" />
+  <img src="./screenshots/result.png" width="200" />
+</div>
 
 ## Why Patrick
 
