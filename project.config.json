@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "patrick-wechat",
 	"description": "questionnaire app",
-	"appid": "",
+	"appid": "wx4170b4500577a630",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,

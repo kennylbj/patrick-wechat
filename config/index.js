@@ -1,6 +1,6 @@
 const config = {
   projectName: 'patrick-wechat',
-  date: '2019-4-20',
+  date: '2019-6-25',
   designWidth: 750,
   deviceRatio: {
     '640': 2.34 / 2,
@@ -29,6 +29,10 @@ const config = {
       ]
     ]
   },
+  plugins: [
+    '@tarojs/plugin-sass',
+    '@tarojs/plugin-terser'
+  ],
   defineConstants: {
   },
   mini: {
