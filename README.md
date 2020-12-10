@@ -19,7 +19,7 @@ cd patrick-wechat
 # install dependencies
 yarn install
 
-# install taro cli
+# install taro cli (v3)
 yarn global add @tarojs/cli
 
 # build and watch
@@ -43,9 +43,10 @@ taro update project
 yarn run build:weapp
 ```
 
-## Upgrade To Taro 2.0
+## Upgrade To Taro 3.0
 
-Taro 2.0 is required for this mini app. You can follow [THIS](https://taro-docs.jd.com/taro/docs/migrate-to-2.html) instruction to complete the upgrade.
+patrick-wechat has already upgrade to Taro V3, you can follow [THIS](https://taro-docs.jd.com/taro/docs/migration) instruction to complete the upgrade.
+if you want to use Taro V2 version, please refer to [taro v2 branch](https://github.com/kennylbj/patrick-wechat/tree/taro-v2).
 
 ## Troubleshootting
 

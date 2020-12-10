@@ -19,7 +19,7 @@ cd patrick-wechat
 # install dependencies
 yarn install
 
-# install taro cli
+# install taro cli (v3)
 yarn global add @tarojs/cli
 
 # build and watch
@@ -43,9 +43,10 @@ taro update project
 yarn run build:weapp
 ```
 
-## 升级至Taro 2.0
+## 升级至Taro 3.0
 
-该项目需要使用Taro 2.0，你可以根据[该指引](https://taro-docs.jd.com/taro/docs/migrate-to-2.html)来完成Taro 2.0升级。
+该项目已经升级至Taro V3版本，你可以根据[该指引](https://taro-docs.jd.com/taro/docs/migration)来完成Taro V3的升级。
+如果你仍想使用Taro V2版本，可以切换至[Taro V2分支](https://github.com/kennylbj/patrick-wechat/tree/taro-v2)。
 
 ## 常见问题
 
