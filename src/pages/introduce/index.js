@@ -1,25 +1,21 @@
-import Taro, { Component } from '@tarojs/taro';
-import { connect } from '@tarojs/redux';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Taro, { getCurrentInstance } from '@tarojs/taro';
 import { View, Image, Text } from '@tarojs/components';
-import { AtButton } from 'taro-ui'
+import { AtButton } from 'taro-ui';
 import './index.scss';
 
 @connect(({ questionnaires }) => ({
   questionnaires: questionnaires.list,
 }))
 class Introduce extends Component {
-  config = {
-    navigationBarTitleText: '问卷简介',
-    navigationBarBackgroundColor: '#F0F0F0',
-    backgroundColor: '#F0F0F0',
-  }
-
   state = {
     questionnaireId: '',
   }
 
   componentDidMount() {
-    const { questionnaireId } = this.$router.params;
+    const { router } = getCurrentInstance();
+    const { questionnaireId } = router.params;
     this.setState({ questionnaireId: parseInt(questionnaireId) });
   }
 
@@ -37,7 +33,7 @@ class Introduce extends Component {
     Taro.navigateTo({ url: `/pages/questionnaire/index?questionnaireId=${questionnaireId}` });
   }
 
-  render () {
+  render() {
     const { questionnaires } = this.props;
     const { questionnaireId } = this.state;
     console.log(questionnaireId);
@@ -50,14 +46,14 @@ class Introduce extends Component {
           <View className='head'>
             <View className='image'>
               <Image src={imageUrl} />
-              <Text>{ title }</Text>
+              <Text>{title}</Text>
             </View>
             <View className='desc'>
               <Text>
-                { questionSize } 道题
+                {questionSize} 道题
               </Text>
               <Text>
-                { duration } 分钟
+                {duration} 分钟
               </Text>
             </View>
             <View className='btns'>
@@ -69,7 +65,7 @@ class Introduce extends Component {
             <View className='panel__title title'>问卷简介</View>
             <View className='panel__content no-padding txt'>
               <Text>
-                { description }
+                {description}
               </Text>
             </View>
           </View>

@@ -21,7 +21,7 @@ export default {
                 key: 'A',
                 value: '不破楼兰终不还',
                 score: 0,
-              }, 
+              },
               {
                 id: 2,
                 key: 'B',
@@ -123,7 +123,7 @@ export default {
                 key: 'A',
                 value: '没有或很少时间',
                 score: 1,
-              }, 
+              },
               {
                 id: 2,
                 key: 'B',
@@ -154,7 +154,7 @@ export default {
                 key: 'A',
                 value: '没有或很少时间',
                 score: 1,
-              }, 
+              },
               {
                 id: 2,
                 key: 'B',
@@ -185,7 +185,7 @@ export default {
                 key: 'A',
                 value: '没有或很少时间',
                 score: 1,
-              }, 
+              },
               {
                 id: 2,
                 key: 'B',
@@ -216,7 +216,7 @@ export default {
                 key: 'A',
                 value: '没有或很少时间',
                 score: 1,
-              }, 
+              },
               {
                 id: 2,
                 key: 'B',
@@ -247,7 +247,7 @@ export default {
                 key: 'A',
                 value: '没有或很少时间',
                 score: 1,
-              }, 
+              },
               {
                 id: 2,
                 key: 'B',
@@ -277,8 +277,8 @@ export default {
   completeQuestionnaire: questionnaireId => {
     console.log('complete', questionnaireId);
     const result = {
-      title: 'ojbk',
-      content: '666',
+      title: 'ok',
+      content: 'You have completed the questionnaire',
     };
     return new Promise(resolve => setTimeout(() => resolve(result), 1000));
   }

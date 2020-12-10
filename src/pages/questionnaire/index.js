@@ -1,32 +1,25 @@
-import Taro, { Component } from '@tarojs/taro'
-import { connect } from '@tarojs/redux';
-import { View } from '@tarojs/components'
-import { AtProgress, AtButton } from 'taro-ui'
-import PRadio from '../../components/radio'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Taro, { getCurrentInstance } from '@tarojs/taro';
+import { View } from '@tarojs/components';
+import { AtProgress, AtButton } from 'taro-ui';
+import PRadio from '../../components/radio';
 import { answer, complete } from '../../actions/questionnaires';
-import './index.scss'
+import './index.scss';
 
 @connect(({ questionnaires }) => ({
   questionnaires: questionnaires.list,
 }))
 class Questionnaire extends Component {
-  config = {
-    navigationBarTitleText: '填写问卷',
-    navigationBarBackgroundColor: '#FAFBFC',
-  }
-
   state = {
     questionnaireId: '',
     currentIndex: 0,
   }
 
   componentDidMount() {
-    const { questionnaireId } = this.$router.params;
+    const { router } = getCurrentInstance();
+    const { questionnaireId } = router.params;
     this.setState({ questionnaireId: parseInt(questionnaireId) });
-  }
-
-  componentWillUnmount() {
-    console.log('will unmount')
   }
 
   getQuestions = () => {
@@ -53,7 +46,7 @@ class Questionnaire extends Component {
       }
     }
   }
-  
+
   handlePrev = () => {
     const { currentIndex } = this.state;
     if (currentIndex === 0) {
@@ -74,7 +67,7 @@ class Questionnaire extends Component {
     });
   }
 
-  render () {
+  render() {
     const { currentIndex } = this.state;
     const questions = this.getQuestions();
     const question = questions[currentIndex] || {};
@@ -98,7 +91,7 @@ class Questionnaire extends Component {
             <View className='panel__content'>
               <View className='card'>
                 <View className='title'>
-                  { title }
+                  {title}
                 </View>
                 <View className='question'>
                   <PRadio options={radioOptions} selectedKey={selectedIds[0]} onSelect={this.handleRadioSelect} />

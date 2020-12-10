@@ -3,8 +3,8 @@ import {
   RECEIVE_QUESTIONNAIRES,
   ANSWER_QUESTION,
   RECEIVE_QUESTIONNAIRE_RESULT,
-} from '../constants/actionType'
-import api from '../api/questionnaires'
+} from '../constants/actionType';
+import api from '../api/questionnaires';
 
 // request questionnaires
 const requestQuestionnaires = () => ({
@@ -21,7 +21,7 @@ export const fetchQuestionnaires = () => dispatch => {
   return api.fetchQuestionnaires().then(questionnaires => {
     return dispatch(receiveQuestionnaires(questionnaires));
   });
-}
+};
 
 // answer one question
 export const answer = (questionnaireId, questionId, selectedIds) => ({
@@ -43,4 +43,4 @@ export const complete = questionnaireId => dispatch => {
   return api.completeQuestionnaire(questionnaireId).then(result => {
     return dispatch(receiveQuestionnaireResult(result));
   });
-}
+};

@@ -1,15 +1,8 @@
-import Taro, { Component } from '@tarojs/taro';
+import React, { Component } from 'react';
 import { View } from '@tarojs/components';
 import './index.scss';
 
 class Result extends Component {
-  config = {
-    navigationBarTitleText: '结果',
-    usingComponents: {
-      'chart-canvas': '../../components/chart-canvas/index',
-    },
-  }
-
   onShareAppMessage() {
     return {
       title: '问卷宝典',
@@ -30,13 +23,13 @@ class Result extends Component {
       { name: '属性5', value: 6 },
       { name: '属性6', value: 8 }
     ];
-  
+
     const chart = new F2.Chart({
       el: canvas,
       width,
       height
     });
-  
+
     chart.source(data, {
       value: {
         min: 0,
@@ -80,7 +73,7 @@ class Result extends Component {
         delay: 300
       }
     });
-  
+
     chart.guide().text({
       position: ['50%', '50%'],
       content: '73',
@@ -93,7 +86,7 @@ class Result extends Component {
     return chart;
   }
 
-  render () {
+  render() {
     const opts = {
       onInit: this.initChart
     }

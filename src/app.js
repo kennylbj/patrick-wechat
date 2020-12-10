@@ -1,37 +1,13 @@
-// import '@tarojs/async-await'
-import Taro, { Component } from '@tarojs/taro'
-import { Provider } from '@tarojs/redux'
-import 'taro-ui/dist/style/index.scss'
-import Index from './pages/index'
-import configStore from './store'
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import configStore from './store';
 
-import './app.scss'
+import './app.scss';
+import 'taro-ui/dist/style/index.scss';
 
-// 如果需要在 h5 环境中开启 React Devtools
-// 取消以下注释：
-// if (process.env.NODE_ENV !== 'production' && process.env.TARO_ENV === 'h5')  {
-//   require('nerv-devtools')
-// }
-
-const store = configStore()
+const store = configStore();
 
 class App extends Component {
-
-  config = {
-    pages: [
-      'pages/index/index',
-      'pages/introduce/index',
-      'pages/questionnaire/index',
-      'pages/result/index',
-    ],
-    window: {
-      backgroundTextStyle: 'dark',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: '问卷宝典',
-      navigationBarTextStyle: 'black'
-    }
-  }
-
   componentDidMount () {}
 
   componentDidShow () {}
@@ -45,10 +21,10 @@ class App extends Component {
   render () {
     return (
       <Provider store={store}>
-        <Index />
+        {this.props.children}
       </Provider>
     )
   }
 }
 
-Taro.render(<App />, document.getElementById('app'))
+export default App;

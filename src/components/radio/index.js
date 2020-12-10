@@ -1,26 +1,24 @@
-import Taro, { Component } from '@tarojs/taro'
-import { View } from '@tarojs/components'
-import isEqual from 'lodash/isEqual'
-import RadioItem from './item'
-import './index.scss'
+import React, { Component } from 'react';
+import { View } from '@tarojs/components';
+import isEqual from 'lodash/isEqual';
+import RadioItem from './item';
+import './index.scss';
 
 class PRadio extends Component {
-  static options = {
-    addGlobalClass: true,
-  }
-
   state = {
     data: [],
   }
 
   componentWillReceiveProps(nextProps) {
-    const options= this.props.options || [];
+    const options = this.props.options || [];
     const nextOptions = nextProps.options || [];
     if (!isEqual(options, nextOptions)) {
-      this.setState({ data: nextOptions.map(op => ({
-        ...op,
-        selected: false,
-      }))});
+      this.setState({
+        data: nextOptions.map(op => ({
+          ...op,
+          selected: false,
+        }))
+      });
     }
   }
 
@@ -46,11 +44,11 @@ class PRadio extends Component {
     onSelect(selectedKey);
   }
 
-  render () {
+  render() {
     const { data } = this.state;
     const { selectedKey } = this.props;
     const radioItems = data.map(item => (
-      <RadioItem 
+      <RadioItem
         key={item.key}
         index={item.index}
         value={item.value}
@@ -60,7 +58,7 @@ class PRadio extends Component {
     ));
     return (
       <View className='radio'>
-        { radioItems }
+        { radioItems}
       </View>
     )
   }

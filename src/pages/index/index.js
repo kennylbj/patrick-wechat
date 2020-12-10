@@ -1,7 +1,8 @@
-import Taro, { Component } from '@tarojs/taro';
-import { connect } from '@tarojs/redux';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Taro from '@tarojs/taro';
 import { View } from '@tarojs/components';
-import { AtList, AtListItem, AtActivityIndicator } from 'taro-ui'
+import { AtList, AtListItem, AtActivityIndicator } from 'taro-ui';
 import { fetchQuestionnaires } from '../../actions/questionnaires';
 import './index.scss';
 
@@ -10,11 +11,6 @@ import './index.scss';
   loading: questionnaires.loading,
 }))
 class Index extends Component {
-  config = {
-    navigationBarTitleText: '问卷宝典',
-    enablePullDownRefresh: true,
-  }
-
   // auto invoke when share
   onShareAppMessage() {
     return {
@@ -43,9 +39,8 @@ class Index extends Component {
     Taro.navigateTo({ url: `/pages/introduce/index?questionnaireId=${item.id}` });
   }
 
-  render () {
+  render() {
     const { questionnaires, loading } = this.props;
-    console.log('questionnaires', questionnaires, loading);
     const questionnaireList = questionnaires.map(item => (
       <AtListItem
         key={item.id}
@@ -60,21 +55,21 @@ class Index extends Component {
         <View className='doc-body bg'>
           <View className='panel'>
             <View className='panel__title'>问卷列表</View>
-              <View className='panel__content no-padding'>
-                <View className='example-item list'>
-                  {
-                    loading ? (
-                      <AtActivityIndicator mode='center'></AtActivityIndicator>
-                    ) : (
+            <View className='panel__content no-padding'>
+              <View className='example-item list'>
+                {
+                  loading ? (
+                    <AtActivityIndicator mode='center'></AtActivityIndicator>
+                  ) : (
                       <AtList>
                         {
                           questionnaireList
                         }
                       </AtList>
                     )
-                  }
-                </View>
+                }
               </View>
+            </View>
           </View>
         </View>
       </View>
