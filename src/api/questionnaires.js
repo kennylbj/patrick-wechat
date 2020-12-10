@@ -1,7 +1,7 @@
 // import { BASE_API_URL } from '../constants/common'
 
 export default {
-  fetchQuestionnaires: () => {
+  fetchQuestionnaires: async () => {
     const data = [
       {
         id: 1,
@@ -273,8 +273,7 @@ export default {
     // mock delay 1000ms
     return new Promise(resolve => setTimeout(() => resolve(data), 1000));
   },
-  completeQuestionnaire: questionnaireId => {
-    console.log('complete', questionnaireId);
+  completeQuestionnaire: async questionnaireId => {
     const result = {
       title: 'ok',
       content: 'You have completed the questionnaire',

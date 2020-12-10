@@ -16,11 +16,10 @@ const receiveQuestionnaires = data => ({
   payload: data,
 });
 
-export const fetchQuestionnaires = () => dispatch => {
+export const fetchQuestionnaires = () => async dispatch => {
   dispatch(requestQuestionnaires());
-  return api.fetchQuestionnaires().then(questionnaires => {
-    return dispatch(receiveQuestionnaires(questionnaires));
-  });
+  const response = await api.fetchQuestionnaires();
+  return dispatch(receiveQuestionnaires(response));
 };
 
 // answer one question
@@ -39,8 +38,7 @@ const receiveQuestionnaireResult = data => ({
 });
 
 // complete one questionnaire
-export const complete = questionnaireId => dispatch => {
-  return api.completeQuestionnaire(questionnaireId).then(result => {
-    return dispatch(receiveQuestionnaireResult(result));
-  });
+export const complete = questionnaireId => async dispatch => {
+  const response = await api.completeQuestionnaire(questionnaireId)
+  return dispatch(receiveQuestionnaireResult(response));
 };
