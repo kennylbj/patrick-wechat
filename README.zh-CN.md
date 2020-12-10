@@ -67,4 +67,4 @@ yarn run build:weapp
 
 派大星是海绵宝宝中的一个角色，它是个问题宝宝。
 
-![patrick](https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Patrick_Star.svg/1200px-Patrick_Star.svg.png)
+![patrick](./screenshots/patrick.png)

@@ -67,4 +67,4 @@ if you want to use Taro V2 version, please refer to [taro v2 branch](https://git
 
 Patrick Star is a fictional character in SpongeBob SquarePants And he loves asking questions!
 
-![patrick](https://upload.wikimedia.org/wikipedia/en/thumb/3/33/Patrick_Star.svg/1200px-Patrick_Star.svg.png)
+![patrick](./screenshots/patrick.png)
