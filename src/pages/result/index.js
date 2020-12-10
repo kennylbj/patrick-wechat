@@ -3,15 +3,15 @@ import { View } from '@tarojs/components';
 import './index.scss';
 
 class Result extends Component {
+  componentDidMount() {
+    console.log('result mount');
+  }
+
   onShareAppMessage() {
     return {
       title: '问卷宝典',
       path: '/pages/result/index',
     }
-  }
-
-  componentDidMount() {
-    console.log('result mount');
   }
 
   initChart = (canvas, width, height, F2) => {

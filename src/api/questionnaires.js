@@ -1,4 +1,3 @@
-import Taro from '@tarojs/taro'
 // import { BASE_API_URL } from '../constants/common'
 
 export default {
